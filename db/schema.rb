@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_10_03_133628) do
+ActiveRecord::Schema.define(version: 2021_10_03_140358) do
 
   create_table "companies", force: :cascade do |t|
     t.string "name"
@@ -30,7 +30,7 @@ ActiveRecord::Schema.define(version: 2021_10_03_133628) do
     t.boolean "trial"
     t.string "subscription_type"
     t.datetime "bill_date"
-    t.string "duration"
+    t.date "duration"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
