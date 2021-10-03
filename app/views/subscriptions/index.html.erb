@@ -1,7 +1,7 @@
 <h1>Subscriptions</h1>
 
 <% @subscriptions.each do |subscription| %>
-  <h2><%= link_to subscription.name, subscription %> </h2>
+  <h2 class="text-2xl"><%= link_to subscription.name, subscription %> </h2>
   <p><%= subscription.price %></p>
 <% end %>
 

@@ -25,6 +25,9 @@ gem 'jbuilder', '~> 2.7'
 # https://github.com/RubyMoney/money-rails
 gem 'money-rails', '~>1.12'
 
+# https://github.com/rails/cssbundling-rails
+gem 'cssbundling-rails'
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
