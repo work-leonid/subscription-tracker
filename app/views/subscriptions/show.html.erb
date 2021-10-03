@@ -1,3 +1,7 @@
 <%= link_to 'All subscription', root_path %>
 
 <h1><%= @subscription.name %></h1>
+<p><%= @subscription.price %></p>
+
+<%= link_to 'Edit', edit_subscription_path(@subscription) %>
+<%= link_to 'Destroy', @subscription, method: :delete %>
