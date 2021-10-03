@@ -1,0 +1,24 @@
+<%= form_with model: @subscription do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :price %>
+  <%= f.number_field :price %>
+
+  <%= f.label :currency %>
+
+  <%= f.label :trial %>
+
+  <%= f.label :bill_date %>
+
+  <%= f.label :cycle %>
+
+  <%= f.label :duration %>
+
+  <%= f.label :reminder %>
+
+  <%= f.label :subscription_type %>
+
+
+  <%= f.submit %>
+<% end %>
