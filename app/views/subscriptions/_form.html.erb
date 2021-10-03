@@ -1,12 +1,15 @@
 <%= form_with model: @subscription do |f| %>
+
   <%= f.label :name %>
-  <%= f.text_field :name %>
+  <%= f.text_field :name, autofocus: true %>
 
   <%= f.label :price %>
   <%= f.number_field :price %>
 
   <%= f.label :currency %>
+  <%#= f.select :currency %>
 
+  <%= f.check_box :trial %>
   <%= f.label :trial %>
 
   <%= f.label :bill_date %>
