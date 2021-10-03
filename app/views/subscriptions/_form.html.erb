@@ -6,22 +6,25 @@
   <%= f.label :price %>
   <%= f.number_field :price %>
 
-  <%= f.label :currency %>
-  <%#= f.select :currency %>
+  <%= f.select :currency, %i[₽ $ € ￡] %>
 
   <%= f.check_box :trial %>
   <%= f.label :trial %>
 
   <%= f.label :bill_date %>
+  <%= f.date_select :bill_date %>
 
-  <%= f.label :cycle %>
+  <%= f.label :cycle, 'Every' %>
+  <%= f.select :cycle, %i[month year] %>
 
   <%= f.label :duration %>
+  <%= f.date_select :duration %>
 
   <%= f.label :reminder %>
+  <%= f.date_select :reminder %>
 
   <%= f.label :subscription_type %>
-
+  <%= f.select :subscription_type, %i[Individual Family Business] %>
 
   <%= f.submit %>
 <% end %>
