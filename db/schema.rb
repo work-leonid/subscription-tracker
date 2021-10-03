@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_10_03_080144) do
+ActiveRecord::Schema.define(version: 2021_10_03_081655) do
 
   create_table "subscriptions", force: :cascade do |t|
     t.integer "price"
@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 2021_10_03_080144) do
     t.string "name"
     t.datetime "reminder"
     t.boolean "trial"
-    t.string "type"
+    t.string "subscription_type"
     t.datetime "bill_date"
     t.string "duration"
     t.datetime "created_at", precision: 6, null: false
